@@ -1,0 +1,4 @@
+// this allows us to provide files that would be ignored by github
+.env
+node_modules
+note.txt
