@@ -4,10 +4,10 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const mongoose = require("mongoose")
 const userRouter = require("./routes/userRouter")
-
+const cors = require("cors")
 // middleware 
 app.use (express.json ())
-
+app.use(cors())
 
 
 // Routes 
