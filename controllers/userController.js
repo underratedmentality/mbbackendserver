@@ -30,7 +30,7 @@ const registerUser = async (req, res) => {
       password,
     });
 
-    const clientUrl = `${process.env.FRONTEND_URL}`/login;
+    const clientUrl = `${process.env.FRONTEND_URL}/login`;
     try {
       await sendWelcomeEmail({
         email: user.email,
